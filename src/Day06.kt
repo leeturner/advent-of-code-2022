@@ -1,15 +1,15 @@
 fun main() {
 
-  fun String.distinctSection(window: Int): Int {
+  fun String.distinctSectionIndex(window: Int): Int {
     return this.windowed(window).indexOfFirst { it.toList().distinct().count() == window } + window
   }
 
   fun part1(input: List<String>): Int {
-    return input.first().distinctSection(4)
+    return input.first().distinctSectionIndex(4)
   }
 
   fun part2(input: List<String>): Int {
-    return input.first().distinctSection(14)
+    return input.first().distinctSectionIndex(14)
   }
 
   // test if implementation meets criteria from the description, like:
