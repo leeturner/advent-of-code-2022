@@ -30,7 +30,7 @@ fun main() {
   }
 
   fun part1(input: List<String>): Long {
-    return input.parseDirectories().filter { it.totalSize <= 100000 }.also { println(it) }.sumOf { it.totalSize }
+    return input.parseDirectories().filter { it.totalSize <= 100000 }.sumOf { it.totalSize }
   }
 
   fun part2(input: List<String>): Long {
